@@ -2,6 +2,7 @@ form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
   align-content: center;
   width: 100%;
 }
@@ -26,15 +27,18 @@ label {
 .submit {
   background-color: #009ce4;
   color: white;
-  padding: 12px 20px;
+  margin-top:10px;
+  padding: 16px;
   border: 1px solid rgba(0, 0, 97, 0.205);
   border-radius: 4px;
   cursor: pointer;
 }
 
 .fieldset {
+  border: 1px solid rgba(0, 0, 97, 0.205);
+  
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #f2f2f288;
   padding: 20px;
 }
 
@@ -42,7 +46,7 @@ label {
   display: flex;
   align-items: center;
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #f2f2f288;
   padding: 20px;
 }
 

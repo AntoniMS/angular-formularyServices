@@ -1,6 +1,8 @@
-<h1>Soy el listado de Usuarios:</h1>
-<ul>
-    <li *ngFor="let user of userList">
+
+
+<h1>Users List:</h1>
+<ul class = "container">
+    <li *ngFor="let user of userList" class = "list">
         <app-user-card [user]='user'></app-user-card>
     </li>
 </ul>

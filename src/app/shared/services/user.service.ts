@@ -11,12 +11,12 @@ export class UserService {
   constructor() { }
 
   public setUser(user: User): void {
-    debugger;
+   
     this.userList?.push(user);
   }
 
   public getUsers(): User[] | undefined {
-    debugger;
+    
     return this.userList
   }
 }
