@@ -1,0 +1,45 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="userRegisterForm" class = "form">
+    <fieldset class ="fieldset">
+        <label for="name" class ="label">Name:</label>
+        <input type="text" id="name" formControlName="name">
+    </fieldset>
+    <div class="error" *ngIf="!userRegisterForm.get('name')?.valid &&
+    (userRegisterForm.get('name')?.touched || submitted)">
+        Has introducido mal tu nombre
+    </div>
+
+    <fieldset class ="fieldset">
+        <label for="email"> Email:</label>
+        <input type="email" id="email" formControlName="email">
+    </fieldset>
+    <div class="error" *ngIf="!userRegisterForm.get('email')?.valid &&
+    (userRegisterForm.get('email')?.dirty || submitted)">
+        Has introducido mal tu email.
+    </div>
+    <fieldset class ="fieldset" >
+        <label for="password"> Password:</label>
+        <input type="password" id="password" formControlName="password">
+    </fieldset>
+    <div class="error" *ngIf="!userRegisterForm.get('password')?.valid &&
+    (userRegisterForm.get('password')?.dirty || submitted)">
+        Has introducido mal tu contraseña.
+    </div>
+    <fieldset class ="fieldset">
+        <label for="passwordRepeat"> Repeat Password:</label>
+        <input type="password" id="passwordRepeat" formControlName="passwordRepeat">
+    </fieldset>
+    <div class="error" *ngIf="!userRegisterForm.get('passwordRepeat')?.valid &&
+    (userRegisterForm.get('passwordRepeat')?.dirty || submitted)">
+        Has introducido mal tu contraseña.
+    </div>
+    <fieldset class ="fieldsetGender" >
+        
+        <label for="genderMale"> Male:</label>
+        <input type="radio" id="genderMale" formControlName="gender" value="Male">
+        <label for="genderFemale"> Female:</label>
+        <input type="radio" id="genderFemale" formControlName="gender" value="Female">
+        <label for="genderOther"> Other:</label>
+        <input type="radio" id="genderOther" formControlName="gender" value="Other">
+        <button [disabled]="!userRegisterForm.valid" class="submit">Send User</button>
+    </fieldset>
+</form>

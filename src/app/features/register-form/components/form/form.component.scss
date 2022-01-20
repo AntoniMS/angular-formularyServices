@@ -1,0 +1,51 @@
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(195, 186, 186);
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.submit {
+  background-color: #009ce4;
+  color: white;
+  padding: 12px 20px;
+  border: 1px solid rgba(0, 0, 97, 0.205);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.fieldset {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.fieldsetGender {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.error {
+  color: red;
+}
