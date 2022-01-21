@@ -35,7 +35,7 @@ label {
   padding: 16px;
   font-weight: 700;
   border: 1px solid rgb(0, 0, 0);
-  border-radius: 4px;
+  border-radius: 15px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -47,7 +47,7 @@ label {
     rgb(35, 52, 53) 41%,
     rgb(0, 75, 161) 87%
   );
-  padding: 14px;
+  border-radius: 20px;
   color: rgb(255, 245, 199);
   transition: 0.3s;
 }
