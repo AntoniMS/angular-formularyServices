@@ -2,7 +2,6 @@ form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
   align-content: center;
   width: 100%;
 }
@@ -24,19 +23,21 @@ label {
   display: inline-block;
 }
 
+
 .submit {
-  background-color: #009ce4;
-  color: white;
+  
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 8, 82) 41%, rgb(0, 85, 182) 87%);
+  color: rgb(255, 255, 255);
   margin-top:10px;
   padding: 16px;
-  border: 1px solid rgba(0, 0, 97, 0.205);
+  font-weight: 700;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 4px;
   cursor: pointer;
 }
 
 .fieldset {
   border: 1px solid rgba(0, 0, 97, 0.205);
-  
   border-radius: 5px;
   background-color: #f2f2f288;
   padding: 20px;
@@ -47,8 +48,16 @@ label {
   align-items: center;
   border-radius: 5px;
   background-color: #f2f2f288;
-  padding: 20px;
+  padding: 10px;
 }
+
+labelG {
+  display:flex;
+  flex-wrap: wrap;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
 
 .error {
   color: red;

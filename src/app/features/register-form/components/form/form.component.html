@@ -57,32 +57,32 @@
     Password error.
   </div>
   <div class="fieldset">
-    <p>Gender:</p>
     <fieldset class="fieldsetGender">
-      <label for="genderMale"> Male:</label>
+      <label class="labelG" for="genderMale"> Male:
       <input
         type="radio"
         id="genderMale"
         formControlName="gender"
         value="Male"
-      />
-      <label for="genderFemale"> Female:</label>
+      /></label>
+      <label class="labelG" for="genderFemale"> Female:
       <input
         type="radio"
         id="genderFemale"
         formControlName="gender"
         value="Female"
-      />
-      <label for="genderOther"> Other:</label>
+        
+      /></label>
+      <label class="labelG" for="genderOther"> Other:
       <input
         type="radio"
         id="genderOther"
         formControlName="gender"
         value="Other"
-      />
+      /></label>
+      <button [disabled]="!userRegisterForm.valid" class="submit">
+        Send User
+      </button>
     </fieldset>
-    <button [disabled]="!userRegisterForm.valid" class="submit">
-      Send User
-    </button>
   </div>
 </form>
